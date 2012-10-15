@@ -30,8 +30,8 @@ class Pomodoro:
 def main():
 	doro = Pomodoro()
 	while True:
-		doro.timer("work", doro.work_period)
 		doro.timer("rest", doro.rest_period)
+		doro.timer("work", doro.work_period)
 
 if __name__ == "__main__":
 	main()
