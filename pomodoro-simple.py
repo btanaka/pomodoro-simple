@@ -19,7 +19,7 @@ class Pomodoro:
     def timer(self, message, time_remaining):
         print "%s for %s minutes" % (message, str(time_remaining))
         while time_remaining > 0:
-            sys.stdout.write(str(time_remaining) + " ")
+            sys.stdout.write(str(time_remaining) + " " + message + "\n")
             sys.stdout.flush()
             time.sleep(self.sleepiness)
             time_remaining -= 1
